@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from 'src/app/services/API.service';
+import { ImageCallResponse } from 'src/app/services/interface';
 
 
 @Component({
@@ -10,17 +11,17 @@ import { ApiService } from 'src/app/services/API.service';
 export class HomePageComponent {
 
   constructor(public _apiService: ApiService){
-   this.getImages("cute animals", 15)
+   this.getImages("wildlife", 8)
       }
 
-images: any
+images: ImageCallResponse[] = []
 
       getImages(query: string, perPage: number): void {
         this._apiService.getImages(query, perPage).subscribe((res) => {
           
         this.images = res.photos
 
-        console.log("API response", this.images);
+        console.log("API response home", this.images);
         })
       }
 

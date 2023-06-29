@@ -3,10 +3,10 @@
         Wakalery
     </div>
   <div class="flex justify-between ">
-  <a href="#" class="mx-14 text-base focus:text-orange-500 focus:text-lg">Home</a>
-  <a href="#" class="mx-14 text-base focus:text-orange-500">Gallery 1</a>
-  <a href="#" class="mx-14 text-base  focus:text-orange-500">Gallery 2</a>
-  <a href="#" class="mx-14 text-base  focus:text-orange-500">Gallery 3</a>
+  <a href="/" class="mx-14 text-base  focus:text-lg" [class.active]="isLinkActive('/')">Home</a>
+  <a href="/gallery-1" class="mx-14 text-base " [class.active]="isLinkActive('/gallery-1')">Gallery 1</a>
+  <a href="/gallery-2" class="mx-14 text-base  " [class.active]="isLinkActive('/gallery-2')">Gallery 2</a>
+  <a href="/gallery-3" class="mx-14 text-base  " [class.active]="isLinkActive('/gallery-3')">Gallery 3</a>
   </div>
   
   </div>

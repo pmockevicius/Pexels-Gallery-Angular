@@ -5,17 +5,18 @@
 
 
 <div *ngIf="images" class="grid grid-cols-4 grid-rows-4 gap-4 mt-24 relative" style="min-height: 70vh " >
-    <!-- <div class="col-span-6 row-span-2 flex justify-end"> -->
-    <div  class="col-start-4  col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[0].src.medium}})"> 
-    </div>
-
-    <div  class=" absolute h-72 w-72  -top-4 col-span-2 row-span-2 flex flex-col  bg-cover bg-center bg-no-repeat  " > 
+    <div  class="  col-span-1 row-span-2 flex flex-col  bg-cover bg-center bg-no-repeat  " > 
         <h1 class="text-5xl font-normal" style="line-height: 72px;">A Photo Galery of
             The Nature</h1>
             <p>The Nature is Beautiful</p>
             <p>find your favorite picture around</p> 
             <p>the world.</p>
     </div>
+    
+    <div  class="col-start-4  col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[0].src.medium}})"> 
+    </div>
+
+  
 
     <div class="col-start-3 col-span-1 row-span-2 flex  justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[1].src.medium}});">
     </div>

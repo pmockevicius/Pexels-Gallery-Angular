@@ -1,0 +1,19 @@
+<div class=" main-wrapper m-16 h-screen flex justify-center" >
+    
+    <div class="m-16" style="width: 1158px; max-height: 1041px; " >
+        <app-header></app-header>
+
+        <ng-container *ngFor="let animal of animalsArray">
+<div class="mt-12">
+        <h2 class="mb-2">{{animal.groupName}}</h2>
+<div  class="grid grid-cols-4 grid-rows-2 gap-3 gap-x-18">  
+<div *ngFor="let image of animal.images" style="background-image: url({{image.src.medium}})" class="col-span-1 row-span-1 h-50 w-71 bg-center bg-no-repeat bg-cover" (click)="openDialog(image.src.large)">
+</div>
+</div>
+    </div>
+  
+</ng-container>
+    </div>
+</div>
+
+

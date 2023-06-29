@@ -27,4 +27,8 @@ export class ApiService {
     return this.http.get<any>(`${this.baseUrl}/search`, options);
   }
 
+  getImagesFromNextPage(nextPageUrl: string): Observable<any> {
+console.log("getting next page")
+return this.http.get<any>(`${nextPageUrl}`);
+  }
 }

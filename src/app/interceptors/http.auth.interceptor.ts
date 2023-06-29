@@ -16,24 +16,19 @@ export const IS_PUBLIC_API = new HttpContextToken<boolean>(() => false);
 
 @Injectable()
 export class HttpAuthInterceptor implements HttpInterceptor {
-  constructor(
+  constructor() {}
 
-  
-  ) {}
-  intercept(
-    req: HttpRequest<any>,
-    next: HttpHandler
-  ): Observable<HttpEvent<any>> {
-    
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
     const apiKey = environment.appData.apiKey;
-    let headers = {};
 
-   headers = req.headers.set('Authorization', apiKey);
+    const clonedReq = req.clone({
+      setHeaders: {
+        Authorization: apiKey
+      }
+    });
 
- console.log("intercepting")
- return next.handle(req.clone( headers ));
-
-    }
+    console.log("intercepting");
+    return next.handle(clonedReq);
+  }
 }
-
 
