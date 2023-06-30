@@ -25,7 +25,7 @@ export class Gallery2Component {
 
   onScroll(event: any) {
     const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
+    const documentHeight = document.documentElement.scrollHeight -1
     const scrollPosition = window.scrollY;
   
     if (scrollPosition + windowHeight >= documentHeight) {

@@ -6,12 +6,47 @@
 
   
         <div class="mt-36" >
-            <p class="mb-8 text-base">Gallery 3</p>
-    <div  class="masonry-grid grid grid-cols-4 grid-rows-2 gap-3 gap-x-18" >  
-        <ng-container *ngFor="let image of images">
+            <p class="mb-8 text-lg font-normal ">Gallery 3</p>
+    <div  class=" grid grid-cols-4 grid-rows-30 gap-3 gap-x-18 h-96" >  
+
+        
+        <!-- <ng-container *ngFor="let image of images">
             <div *ngIf="image.src" [style.background-image]="'url(' + image.src.medium + ')'" class="col-span-1 row-span-1 h-50 w-71 bg-center bg-no-repeat bg-cover" (click)="openDialog(image.src.large)"></div>
           </ng-container>
-          
+           -->
+
+<!-- 
+<ng-container *ngIf="images">
+          <div class=" col-span-2 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[1].src.medium}});">
+        </div>
+        <div class=" col-span-1 row-span-2  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[2].src.medium}});">
+        </div>
+        <div class="col-start-4 col-span-1 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[3].src.medium}});">
+        </div>
+        <div class=" col-span-1 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[4].src.medium}});">
+        </div>
+        <div class=" col-span-1 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[5].src.medium}});">
+        </div>
+        <div class=" col-span-1 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[6].src.medium}});">
+        </div>
+        <div class=" col-span-1 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[8].src.medium}});">
+        </div>
+        <div class=" col-span-1 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[9].src.medium}});">
+        </div>
+        <div class=" col-span-2 row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[10].src.medium}});">
+        </div>
+    </ng-container> -->
+
+
+  <ng-container  *ngFor="let image of images; let i = index  " >
+        <div *ngIf="images" [style.background-image]="'url(' + image.src.medium + ')'" [ngClass]="getImageContainerClass(i)" (click)="openDialog(image.src.large)" >
+        
+        </div>
+      </ng-container>
+
+
+
+
     <div class="loading-indicator text-lg" *ngIf="isLoading">Loading...</div>
     </div>
         </div>
@@ -19,3 +54,5 @@
 
     </div>
     </div>
+
+

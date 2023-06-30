@@ -16,7 +16,7 @@ export class Gallery3Component {
     public _apiService: ApiService,
     public dialog: MatDialog
     ){
-    this.getImages("jungle animalsw", 40)
+    this.getImages("jungle animals", 20)
        }
 
        isLoading = false;
@@ -26,9 +26,12 @@ export class Gallery3Component {
 
   onScroll(event: any) {
     const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
+    const documentHeight = document.documentElement.scrollHeight -10
     const scrollPosition = window.scrollY;
   
+
+
+
     if (scrollPosition + windowHeight >= documentHeight) {
       console.log('End of page');
      this.loadMoreData()
@@ -68,10 +71,32 @@ export class Gallery3Component {
         });
       }
 
-      getRandomColSpan(): number {
-        const minColSpan = 1; // Minimum col-span value
-        const maxColSpan = 4; // Maximum col-span value
-        return Math.floor(Math.random() * (maxColSpan - minColSpan + 1) + minColSpan);
+      // getRandomColSpan(): number {
+      //   const minColSpan = 1; // Minimum col-span value
+      //   const maxColSpan = 4; // Maximum col-span value
+      //   return Math.floor(Math.random() * (maxColSpan - minColSpan + 1) + minColSpan);
+      // }
+
+      getImageContainerClass(index: number): string {
+        // Define the pattern of classes based on the index
+        const patterns = [
+          'col-span-2 row-span-1 bg-cover bg-center bg-no-repeat ',
+          'col-span-1 row-span-2 bg-cover bg-center bg-no-repeat ',
+          'col-start-4 col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat ',
+          'col-span-2 row-span-1 bg-cover bg-center bg-no-repeat'
+        ];
+      
+        // Return the appropriate class based on the index
+
+        console.log(index, patterns[index % patterns.length])
+        return patterns[index % patterns.length];
       }
+      
+
 
 }
