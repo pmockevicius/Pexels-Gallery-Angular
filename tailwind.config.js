@@ -13,8 +13,21 @@ module.exports = {
       },
       colors: {
         'grey': '##636363',
+      },    
+      lineHeight: {
+        '72': '72px',
+        '7.5': '30px',
+      },
+      screens: {
+        // 'tablet': '640px',
+  
+        // 'laptop': '1024px',
+      
+        'desktop': '1200px',
+       
       },
     },
+    
   },
   plugins: [],
 }

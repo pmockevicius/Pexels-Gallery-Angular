@@ -15,6 +15,7 @@ import { Gallery3Component } from './components/pages-components/gallery3/galler
 import { MatDialogModule, MatDialog } from '@angular/material/dialog';
 import { ImageDialogComponent } from './components/shared-components/image-dialog/image-dialog.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

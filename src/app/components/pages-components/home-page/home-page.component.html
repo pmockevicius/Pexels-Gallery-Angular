@@ -1,36 +1,36 @@
-<div class=" main-wrapper m-16 h-screen flex justify-center" >
+<div class=" main-wrapper lg:m-12  h-fit flex justify-center " >
     
-<div class="m-16" style="width: 1158px; max-height: 1041px; " >
+<div class="md:mt-12 md:ml-12 md:mr-12  max-md:mx-3 max-sm:my-5 max-sm:mx-1"   style="width: 1158px;  " >
     <app-header></app-header>
 
 
-<div *ngIf="images" class="grid grid-cols-4 grid-rows-4 gap-4 mt-24 relative" style="min-height: 70vh " >
-    <div  class="  col-span-1 row-span-2 flex flex-col  bg-cover bg-center bg-no-repeat  " > 
-        <h1 class="text-5xl font-normal" style="line-height: 72px;">A Photo Galery of
-            The Nature</h1>
-            <p>The Nature is Beautiful</p>
-            <p>find your favorite picture around</p> 
-            <p>the world.</p>
+<div *ngIf="images" class=" grid grid-cols-4 grid-rows-4 max-md:grid-rows-5 max-sm:grid-cols-2 max-sm:grid-rows-6 max-sm:mt-12 gap-4 max-md:gap-2 max-sm:gap-1 md:mt-12 lg:mt-24 relative " style="height: 90vh " >
+    <div  class=" justify-center  md:col-span-1 md:row-span-2 sm:col-span-2 sm:row-span-1 sm:col-start-2 max-sm:col-start-1 max-sm:col-span-2 flex md:flex-col sm:flex-row  bg-cover bg-center bg-no-repeat  " > 
+        <div class="flex text-center flex-col ">
+            <p class="max-md:mr-8 max-sm:mr-0 lg:text-5xl md:text-3xl sm:text-2xl max-sm:text-xl max-sm:leading-2 max-sm:my-3 font-normal lg:leading-72 sm:leading-relaxed "  >A Photo Galery of The Nature </p>
+            <p class="max-sm:mb-3">The Nature is Beautiful find your favorite picture around the world.</p>
+    </div >
+
     </div>
     
-    <div  class="col-start-4  col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[0].src.medium}})"> 
+    <div  class="snake lg:col-start-4  md:col-start-2 sm:col-start-1  max-sm:row-span-1 max-md:row-span-2 max-md:col-span-2 col-span-1 row-span-1 max-sm:row-start-2 bg-cover bg-center bg-no-repeat" style="background-image: url({{images[0].src.medium}})"> 
     </div>
 
   
 
-    <div class="col-start-3 col-span-1 row-span-2 flex  justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[1].src.medium}});">
+    <div class="bear lg:col-start-3 md:col-start-3 sm:col-start-3 lg:col-span-1 md:col-span-2 sm:col-span-2 md:row-span-1 lg:row-span-2 max-sm:row-start-3  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[1].src.medium}});">
     </div>
-    <div class=" col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[2].src.medium}});">
+    <div class="lizard lg:col-span-1 lg:row-span-1 md:col-span-2 max-md:col-start-3 max-sm:col-start-1 bg-cover bg-center bg-no-repeat" style="background-image: url({{images[2].src.medium}});">
     </div>
-    <div class="col-start-2 col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[3].src.medium}});">
+    <div class="turtle lg:col-start-2 lg:col-span-1 lg:row-span-1 md:row-span-2  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[3].src.medium}});">
     </div>
-    <div class=" col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[4].src.medium}});">
+    <div class="osso lg:col-span-1 lg:row-span-1 md:row-span-2 bg-cover bg-center bg-no-repeat" style="background-image: url({{images[4].src.medium}});">
     </div>
-    <div class=" col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[5].src.medium}});">
+    <div class="dolphin lg:col-span-1 lg:row-span-1 max-md:row-span-1 max-sm:row-span-1  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[5].src.medium}});">
     </div>
-    <div class=" col-span-1 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[6].src.medium}});">
+    <div class="elephant  lg:col-span-1 lg:row-span-1 max-md:row-span-2 max-md:col-span-2 max-sm:col-span-2  bg-cover bg-center bg-no-repeat" style="background-image: url({{images[6].src.medium}});">
     </div>
-    <div class=" col-span-2 row-span-1 flex justify-end bg-cover bg-center bg-no-repeat" style="background-image: url({{images[7].src.medium}});">
+    <div class="owel lg:col-span-2 md:col-span-3 lg:row-span-1 max-md:row-span-1 max-md:col-span-2 max-sm:col-span-1 max-sm:row-span-1 max-sm:row-start-3 bg-cover bg-center bg-no-repeat" style="background-image: url({{images[7].src.medium}});">
     </div>
    
 
