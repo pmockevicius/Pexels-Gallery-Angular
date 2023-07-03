@@ -1,0 +1,24 @@
+@media only screen and (min-width: 1024px) {
+    .image-grid {
+        height: calc(100vh - 270px)
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .image-grid {
+        height: calc(100vh - 164px)
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .image-grid {
+        height: calc(100vh - 131px)
+    }
+  }
+
+
+  @media only screen and (max-width: 640px) {
+    .image-grid {
+        height: calc(100vh - 101px)
+    }
+  }

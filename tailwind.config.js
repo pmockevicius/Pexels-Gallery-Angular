@@ -10,9 +10,11 @@ module.exports = {
       },
       height: {
         '50': '196px',
+        '14vh': '16vh',
+        'largeScreen': 'calc(100vh - 311px)',
       },
       colors: {
-        'grey': '##636363',
+        'grey': '#636363',
       },    
       lineHeight: {
         '72': '72px',
@@ -26,6 +28,7 @@ module.exports = {
         'desktop': '1200px',
        
       },
+      
     },
     
   },

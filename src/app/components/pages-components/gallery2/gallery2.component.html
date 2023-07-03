@@ -1,19 +1,21 @@
-<div class="scroll-container main-wrapper m-16  flex justify-center" (window:scroll)="onScroll($event)" >
+<!-- <div class="scroll-container main-wrapper m-16  flex justify-center" (window:scroll)="onScroll($event)" > -->
     
-    <div class="m-16" style="width: 1158px; max-height: 1041px; " >
+    <div class=" main-wrapper lg:m-12  h-fit flex justify-center " (window:scroll)="onScroll($event)"  >
+    
+        <div class="md:mt-12 md:ml-12 md:mr-12  max-md:mx-3 max-sm:my-5 max-sm:mx-1"   style="width: 1158px;  " >
         <app-header></app-header>
 
 
         <div class="text-container flex items-center flex-col mt-9 ">
-        <h1 class="text-5xl mb-9">A Photo Gallery of The Nature</h1>
-        <p class="text-xl text-stone-600">The Nature is Beautiful</p>
-        <p class="text-xl text-stone-600">find your favorite picture around the world.</p>
+        <h1 class="text-5xl max-lg:text-4xl max-sm:text-2xl  sm:mb-9 max-sm:mb-4 text-center" >A Photo Gallery of The Nature</h1>
+        <p class="text-xl max-md:text-base max-sm:text-sm text-stone-600 text-center" >The Nature is Beautiful</p>
+        <p class="text-xl max-md:text-base max-sm:text-sm text-stone-600 text-center">find your favorite picture around the world.</p>
     </div>
         <div class="mt-12" >
             
-    <div  class="grid grid-cols-4 grid-rows-2 gap-3 gap-x-18" >  
+    <div  class="grid max-md:grid-cols-2 grid-cols-4 grid-rows-2 gap-3 max-sm:gap-1 max-md:gap-2 gap-x-18" >  
         <ng-container *ngFor="let image of images">
-            <div *ngIf="image.src" [style.background-image]="'url(' + image.src.medium + ')'" class="col-span-1 row-span-1 h-50 w-71 bg-center bg-no-repeat bg-cover" (click)="openDialog(image.src.large)"></div>
+            <div *ngIf="image.src" [style.background-image]="'url(' + image.src.medium + ')'" class="col-span-1 row-span-1   bg-center bg-no-repeat bg-cover" style="height: 12vh" (click)="openDialog(image.src.large)"></div>
           </ng-container>
           
     <div class="loading-indicator text-lg" *ngIf="isLoading">Loading...</div>

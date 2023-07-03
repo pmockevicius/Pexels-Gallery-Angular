@@ -82,11 +82,11 @@ export class Gallery3Component {
         const patterns = [
           'col-span-2 row-span-1 bg-cover bg-center bg-no-repeat ',
           'col-span-1 row-span-2 bg-cover bg-center bg-no-repeat ',
-          'col-start-4 col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
-          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
-          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
-          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
-          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-50 w-71',
+          'col-start-4 col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-14vh ',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-14vh ',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-14vh ',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-14vh ',
+          'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat h-14vh ',
           'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat ',
           'col-span-2 row-span-1 bg-cover bg-center bg-no-repeat'
         ];
