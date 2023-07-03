@@ -15,7 +15,7 @@
             
     <div  class="grid max-md:grid-cols-2 grid-cols-4 grid-rows-2 gap-3 max-sm:gap-1 max-md:gap-2 gap-x-18" >  
         <ng-container *ngFor="let image of images">
-            <div *ngIf="image.src" [style.background-image]="'url(' + image.src.medium + ')'" class="col-span-1 row-span-1   bg-center bg-no-repeat bg-cover" style="height: 12vh" (click)="openDialog(image.src.large)"></div>
+            <div *ngIf="image.src" [style.background-image]="'url(' + image.src.medium + ')'" class="col-span-1 row-span-1   bg-center bg-no-repeat bg-cover" style="height: 15vh; max-height: 196px ;" (click)="openDialog(image.src.large)"></div>
           </ng-container>
           
     <div class="loading-indicator text-lg" *ngIf="isLoading">Loading...</div>

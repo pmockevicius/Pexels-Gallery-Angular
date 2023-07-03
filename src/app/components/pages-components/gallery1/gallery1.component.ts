@@ -32,10 +32,10 @@ export class Gallery1Component {
   groupName: "Dogs",
     images: this.dogsImages,
   },
-  {
-  groupName: "Rabbits",
-    images: this.rabbitImages,
-  },
+  // {
+  // groupName: "Rabbits",
+  //   images: this.rabbitImages,
+  // },
  ]
  
        getCatsImages(): void {
@@ -60,7 +60,7 @@ export class Gallery1Component {
 getImages(){
   this.getCatsImages()
   this.getDogsImages()
-  this.getRabbitImages()
+  // this.getRabbitImages()
   console.log(this.animalsArray)
 
 }
