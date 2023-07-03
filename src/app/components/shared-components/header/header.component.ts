@@ -41,8 +41,5 @@ export class HeaderComponent {
   
 
   
-    // Add your isLinkActive() method and other logic as needed
-
-  
 
 }

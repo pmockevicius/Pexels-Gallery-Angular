@@ -71,14 +71,7 @@ export class Gallery3Component {
         });
       }
 
-      // getRandomColSpan(): number {
-      //   const minColSpan = 1; // Minimum col-span value
-      //   const maxColSpan = 4; // Maximum col-span value
-      //   return Math.floor(Math.random() * (maxColSpan - minColSpan + 1) + minColSpan);
-      // }
-
       getImageContainerClass(index: number): string {
-        // Define the pattern of classes based on the index
         const patterns = [
           'col-span-2 row-span-1 bg-cover bg-center bg-no-repeat ',
           'col-span-1 row-span-2 bg-cover bg-center bg-no-repeat ',
@@ -90,8 +83,6 @@ export class Gallery3Component {
           'col-span-1 row-span-1 bg-cover bg-center bg-no-repeat ',
           'col-span-2 row-span-1 bg-cover bg-center bg-no-repeat'
         ];
-      
-        // Return the appropriate class based on the index
 
         console.log(index, patterns[index % patterns.length])
         return patterns[index % patterns.length];

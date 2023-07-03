@@ -17,13 +17,9 @@ export class ImageDialogComponent {
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: any
   ) {
-
-  
   }
 
 imageUrl =  this.data.imageUrl
-
-
 
   download() {
     fetch(this.imageUrl)

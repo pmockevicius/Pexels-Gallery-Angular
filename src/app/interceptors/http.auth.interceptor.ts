@@ -26,8 +26,6 @@ export class HttpAuthInterceptor implements HttpInterceptor {
         Authorization: apiKey
       }
     });
-
-    console.log("intercepting");
     return next.handle(clonedReq);
   }
 }

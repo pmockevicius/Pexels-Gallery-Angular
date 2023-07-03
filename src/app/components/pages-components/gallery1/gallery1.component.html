@@ -1,4 +1,4 @@
-<!-- <div class=" main-wrapper lg:m-12  h-fit flex justify-center " >
+<div class=" main-wrapper lg:m-12  h-fit flex justify-center " >
     
     <div class="md:mt-12 md:ml-12 md:mr-12  max-md:mx-3 max-sm:my-5 max-sm:mx-1"   style="width: 1158px;  " >
         <app-header></app-header>
@@ -14,26 +14,8 @@
   
 </ng-container>
     </div>
-</div> -->
+</div>
 
 
-<div class=" main-wrapper lg:m-12  h-fit flex justify-center " >
-    
-    <div class=" md:mt-12 md:ml-12 md:mr-12  max-md:mx-3 max-sm:my-5 max-sm:mx-1"   style="width: 1158px;  " >
-        <app-header></app-header>
-<div class="grid-outer">
-        <ng-container *ngFor="let animal of animalsArray" >
-<div class="  mt-14 ">
-        <h2 class="mb-2 text-2xl">{{animal.groupName}}</h2>
-<div  class="  max-md:grid-cols-2 grid grid-cols-4 grid-rows-2 max-md:gap-2 max-sm:gap-1 gap-3 gap-x-18">  
-<div *ngFor="let image of animal.images" style="background-image: url({{image.src.medium}})" class="image-grid col-span-1 row-span-1  bg-center bg-no-repeat bg-cover" style="height: 15vh; max-height: 196px ;" (click)="openDialog(image.src.large)">
-</div>
-</div>
-    </div>
-  
-</ng-container>
-</div>
-    </div>
-</div>
 
 
